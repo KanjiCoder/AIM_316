@@ -36040,6 +36040,18 @@ g25_set ||10 |11 |12 |13 |14 ||  "grid cell indexes" and       :   [163][087]
         it over the edge.                                     |  // [316]
                                                               |  // [316]
     :---------------------------------------------------------+  // [316]
+    #_FURTHER_TEXTURE_PUSH_OPTIMIZATION_# :-------------------+  // [316]
+                                                              |  // [316]
+        Once the bug is removed from our texture push,        |  // [316]
+        we could only push the dirty rectangles that are      |  // [316]
+        visible on-screen. Why push up parts of texture       |  // [316]
+        to GPU if those tiles can't even be seen?             |  // [316]
+                                                              |  // [316]
+        TAG[ visible push optimization | visible push ]       |  // [316]
+        TAG[ visible_push_optimization | visible_push ]       |  // [316]
+        TAG[ visiblepushoptimization   | visiblepush  ]       |  // [316]
+                                                              |  // [316]
+    +---------------------------------------------------------+  // [316]
     
 *** ******************************************************** **/         
 //:==========================:HASHTAG_OR_ATTED_COMMENTS:[085]://         
